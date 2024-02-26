@@ -30,6 +30,14 @@ export const NavbarMain = () => {
     }
   };
 
+  const toggleColor = () => {
+    if (window.scrollY >= 30) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  }
+  
   const toggleHome = () => {
     scroll.scrollToTop();
   }
@@ -56,14 +64,14 @@ export const NavbarMain = () => {
         </NavTop>
         <NavDown>
         <NavWrapper>
-          <NavLogo to='/' onClick={toggleHome}>
+          <NavLogo to='/' onClick={toggleHome} toggleColor={toggleColor}>
             <FaSearch/>
           </NavLogo>
-          <NavMenu scrollNav={scrollNav}>
-            <NavLi ><NavLink to="/">Home</NavLink></NavLi>
-            <NavLi><NavLink to="/">Why Us?</NavLink></NavLi>
-            <NavLi><NavLink to="/">Company</NavLink></NavLi>
-            <NavLi><NavLink to="/">Info</NavLink></NavLi>
+          <NavMenu >
+            <NavLi ><NavLink to="/" toggleColor={toggleColor}>Home</NavLink></NavLi>
+            <NavLi><NavLink to="/" toggleColor={toggleColor}>Why Us?</NavLink></NavLi>
+            <NavLi><NavLink to="/" toggleColor={toggleColor}>Company</NavLink></NavLi>
+            <NavLi><NavLink to="/" toggleColor={toggleColor}>Info</NavLink></NavLi>
           </NavMenu>
         </NavWrapper>
         </NavDown>
