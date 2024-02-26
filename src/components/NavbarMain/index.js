@@ -48,14 +48,14 @@ export const NavbarMain = () => {
     <>
       
       <NavContainer scrollNav={scrollNav}>
-        <NavTop>
+        <NavTop scrollNav={scrollNav}>
           <NavWrapper>
-            <NavTopSpan>
+            <NavTopSpan scrollNav={scrollNav}>
               <FaEnvelope />
               info@skywalkergh.com
             </NavTopSpan>
 
-            <NavTopSpan>
+            <NavTopSpan scrollNav={scrollNav}>
               <FaPhone />
               +233 245 855 385 | +233 245 855 385
             </NavTopSpan>
@@ -64,14 +64,14 @@ export const NavbarMain = () => {
         </NavTop>
         <NavDown>
         <NavWrapper>
-          <NavLogo to='/' onClick={toggleHome} toggleColor={toggleColor}>
+          <NavLogo to='/' onClick={toggleHome} scrollNav={scrollNav}>
             <FaSearch/>
           </NavLogo>
           <NavMenu >
-            <NavLi ><NavLink to="/" toggleColor={toggleColor}>Home</NavLink></NavLi>
-            <NavLi><NavLink to="/" toggleColor={toggleColor}>Why Us?</NavLink></NavLi>
-            <NavLi><NavLink to="/" toggleColor={toggleColor}>Company</NavLink></NavLi>
-            <NavLi><NavLink to="/" toggleColor={toggleColor}>Info</NavLink></NavLi>
+            <NavLi ><NavLink to="/" scrollNav={scrollNav}>Home</NavLink></NavLi>
+            <NavLi><NavLink to="/" scrollNav={scrollNav}>Why Us?</NavLink></NavLi>
+            <NavLi><NavLink to="/" scrollNav={scrollNav}>Company</NavLink></NavLi>
+            <NavLi><NavLink to="/" scrollNav={scrollNav}>Info</NavLink></NavLi>
           </NavMenu>
         </NavWrapper>
         </NavDown>

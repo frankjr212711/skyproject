@@ -23,16 +23,14 @@ export const NavContainer = styled.nav`
 export const NavTop = styled.div`
   width: 100%;
   height: 50px;
-  // border-bottom: 1px solid rgba(255, 255, 255, .1);
-  border-bottom: 1px solid
-    ${({ toggleColor }) =>
-      toggleColor ? "rgba(255, 255, 255, .1)" : "rgba(0, 0, 0, .3)"};
+  border-bottom: 1px solid ${({ scrollNav }) => (scrollNav ? "rgba(0, 0, 0, .1)" : "rgba(255, 255, 255, .1)")};
+
 `;
 export const NavTopSpan = styled.span`
   display: flex;
   align-items: center;
   column-gap: 10px;
-  color: #424242;
+  color: ${({ scrollNav }) => (scrollNav ? "#424242" : "#fff")};
   font-size: 14px;
 `;
 
@@ -52,8 +50,15 @@ export const NavWrapper = styled.div`
 
 export const NavLogo = styled(Link)`
   font-size: 24px;
-  color: ${({ toggleColor }) => (toggleColor ? "#424242" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#424242" : "#fff")};
+
+
 `;
+
+
+
+
+
 export const NavMenu = styled.ul``;
 export const NavLi = styled.li`
   display: inline-block;
@@ -62,6 +67,28 @@ export const NavLi = styled.li`
 export const NavLink = styled(Link)`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ toggleColor }) => (toggleColor ? "#424242" : "#fff")};
-  // color: #424242;
+  color: ${({ scrollNav }) => (scrollNav ? "#424242" : "#fff")};
+  position: relative;
+
+
+ 
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 0%;
+    height: 4px;
+    background: ${({ scrollNav }) =>
+    scrollNav
+      ? "#424242"
+      : "linear-gradient(to top, transparent, 70%, rgba(255,255,255))"};
+
+      transition: .2s ease;
+  }
+  &:hover:before {
+    width: 100%;
+  }
 `;
