@@ -9,7 +9,7 @@ export const NavContainer = styled.nav`
   height: 100px;
   background: ${({ scrollNav }) =>
     scrollNav
-    ? "rgba(255, 255, 255, .98)"
+    ? "rgba(255, 255, 255, .99)"
       : "linear-gradient(to top, transparent, 35%, rgba(0,74,125, .6))"};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
@@ -23,13 +23,13 @@ export const NavTop = styled.div`
   height: 40px;
   border-bottom: 1px solid
     ${({ scrollNav }) =>
-    scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .1)"};
+    scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
 `;
 export const NavTopSpan = styled.span`
   display: flex;
   align-items: center;
   column-gap: 10px;
-  color: ${({ scrollNav }) => (scrollNav ? "rgba(0,74,125, .6)" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
   font-size: 14px;
 `;
 
@@ -57,7 +57,7 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: ${({ scrollNav }) => (scrollNav ? "rgba(0,74,125, .6)" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
 `;
 
 export const NavMenu = styled.ul`
@@ -73,11 +73,12 @@ export const MegaDropDown = styled.div`
   left: 0;
   width: 100%; 
 
-  height: 420px;
-  background: whitesmoke;
+  height: 480px;
+  background: rgba(255, 255, 255);
   transition: .3s ease;
   opacity: 0;
   visibility: hidden;
+  border-top: 1px solid #fefefe;
 `
 
 export const DropDown = styled.div`
@@ -87,6 +88,7 @@ export const DropDown = styled.div`
   transform: translate(-50%, -0%);
   width: 180px;
   background: whitesmoke;
+  background: rgba(255, 255, 255);
   transition: .3s ease;
   opacity: 0;
   visibility: hidden;
@@ -102,12 +104,12 @@ export const NavLi = styled.li`
   position: relative;
 
   &:hover ${MegaDropDown}{
-      opacity: 1;
+      opacity: .99;
       visibility: visible
     }
 
     &:hover ${DropDown}{
-      opacity: 1;
+      opacity: .99;
       visibility: visible
     }
     
@@ -117,7 +119,7 @@ export const NavLi = styled.li`
 export const NavLink = styled(Link)`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ scrollNav }) => (scrollNav ? "rgba(0,74,125, .6)" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
   position: relative;
   display: flex;
   align-items: center;
@@ -185,7 +187,7 @@ export const MenuBtnSpan = styled.span`
 export const MegaDropWrapper = styled.div`
   width: 80%;
   height: 95%;
-  margin: 10px auto;
+  margin: 12px auto;
   border: 1px solid #ddd;
 
 `
@@ -195,11 +197,8 @@ export const DropLink = styled(Link)`
   padding: .5rem 0 .5rem .5rem;
   font-size: 17px;
   color: #424242;
-  
-  &:not(:last-child) {
-    border-bottom: 1px solid #ddd;
-  }
-
+  border-top: 1px solid #eee;
+ 
   &:hover {
     background: rgba(0,74,125, .6);
     color: whitesmoke;

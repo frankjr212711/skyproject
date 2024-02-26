@@ -72,7 +72,7 @@ export const NavbarAlias = () => {
           <NavLogo to='/' onClick={toggleHome} scrollNav={scrollNav}>
             <FaSearch/>
           </NavLogo>
-          <NavMenu >
+          {/* <NavMenu >
             <NavLi ><NavLink to="/" scrollNav={scrollNav}>Home</NavLink></NavLi>
             <NavLi><NavLink to="/about" scrollNav={scrollNav}>Why Us?</NavLink></NavLi>
               <NavLi>
@@ -90,7 +90,7 @@ export const NavbarAlias = () => {
                   <DropLink to='/careers'>Careers</DropLink>
                 </DropDown>
               </NavLi>
-            </NavMenu>
+            </NavMenu> */}
             
             <MenuBtn>
               <MenuBtnSpan scrollNav={scrollNav}></MenuBtnSpan>
