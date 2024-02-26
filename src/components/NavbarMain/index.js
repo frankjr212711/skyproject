@@ -23,7 +23,7 @@ export const NavbarMain = () => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 30) {
+    if (window.scrollY >= 80) {
       setScrollNav(true);
     } else {
       setScrollNav(false);

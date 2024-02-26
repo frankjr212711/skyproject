@@ -6,7 +6,7 @@ export const NavContainer = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   background: ${({ scrollNav }) =>
     scrollNav
       ? "rgba(255, 255, 255, .9)"
@@ -22,7 +22,7 @@ export const NavContainer = styled.nav`
 
 export const NavTop = styled.div`
   width: 100%;
-  height: 50px;
+  height: 40px;
   border-bottom: 1px solid ${({ scrollNav }) => (scrollNav ? "rgba(0, 0, 0, .1)" : "rgba(255, 255, 255, .1)")};
 
 `;
@@ -36,7 +36,7 @@ export const NavTopSpan = styled.span`
 
 export const NavDown = styled.div`
   width: 100%;
-  height: 50px;
+  height: 40px;
 `;
 
 export const NavWrapper = styled.div`
@@ -49,7 +49,7 @@ export const NavWrapper = styled.div`
 `;
 
 export const NavLogo = styled(Link)`
-  font-size: 24px;
+  font-size: 14px;
   color: ${({ scrollNav }) => (scrollNav ? "#424242" : "#fff")};
 
 
@@ -76,7 +76,7 @@ export const NavLink = styled(Link)`
   &:before {
     content: '';
     position: absolute;
-    top: 110%;
+    top: 101%;
     left: 50%; 
     transform: translateX(-50%);
     width: 0%;
