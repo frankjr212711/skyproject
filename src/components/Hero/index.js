@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Video from "../../videos/video-4.mp4";
+import Video from "../../videos/video-3.mp4";
 // import { Button } from "../Button/ButtonElement";
 import {
   HeroContainer,
@@ -26,7 +26,7 @@ export const HeroMain = () => {
       </HeroBg>
 
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>Your one-stop place</HeroH1>
         <HeroP>
           Sign up for a new account today and receive $250 in credit towards
           your next payment
