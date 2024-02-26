@@ -9,7 +9,7 @@ export const NavContainer = styled.nav`
   height: 100px;
   background: ${({ scrollNav }) =>
     scrollNav
-    ? "rgba(255, 255, 255)"
+    ? "rgba(255, 255, 255, .98)"
       : "linear-gradient(to top, transparent, 35%, rgba(0,74,125, .6))"};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
