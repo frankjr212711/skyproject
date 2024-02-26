@@ -10,7 +10,7 @@ export const NavContainer = styled.nav`
   background: ${({ scrollNav }) =>
     scrollNav
     ? "rgba(255, 255, 255)"
-      : "linear-gradient(to top, transparent, 35%, rgba(0,74,125, .6))"};
+      : "rgba(0,74,125)"};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
   font-family: "Jost";
@@ -29,7 +29,7 @@ export const NavTopSpan = styled.span`
   display: flex;
   align-items: center;
   column-gap: 10px;
-  color: ${({ scrollNav }) => (scrollNav ? "rgba(0,74,125, .6)" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
   font-size: 14px;
 `;
 
@@ -57,7 +57,7 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: ${({ scrollNav }) => (scrollNav ? "rgba(0,74,125, .6)" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
 `;
 
 export const NavMenu = styled.ul`
@@ -117,7 +117,7 @@ export const NavLi = styled.li`
 export const NavLink = styled(Link)`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ scrollNav }) => (scrollNav ? "rgba(0,74,125, .6)" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
   position: relative;
   display: flex;
   align-items: center;
@@ -205,8 +205,4 @@ export const DropLink = styled(Link)`
     color: whitesmoke;
   }
 `
-export const MegaLink = styled(Link)`
-  display: block;
-  font-size: 24px;
-  color: #424242;
-`
+

@@ -20,12 +20,11 @@ import {
   MegaDropDown,
   MegaDropWrapper,
   DropDown,
-  DropLink,
-  MegaLink
+  DropLink
 } from "./Elements";
 
 
-export const NavbarMain = () => {
+export const NavbarAlias = () => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -79,11 +78,7 @@ export const NavbarMain = () => {
               <NavLi>
                 <NavLink to="/company" scrollNav={scrollNav}>Company</NavLink>
                 <MegaDropDown>
-                  <MegaDropWrapper>
-                    <MegaLink to='/skywalker'>Skywalker Waters</MegaLink>
-                    <MegaLink to='/gjr'>GJR Kitchens</MegaLink>
-                    <MegaLink to='/librex'>Librex Holdings</MegaLink>
-                  </MegaDropWrapper>
+                  <MegaDropWrapper></MegaDropWrapper>
 
                 </MegaDropDown>
               </NavLi>
