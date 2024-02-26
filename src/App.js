@@ -4,7 +4,6 @@ import { AboutPage } from "./pages/about";
 import { ContactPage } from "./pages/contact";
 import { CareersPage } from "./pages/careers";
 
-
 import { SkywalkerPage } from "./pages/skywalker";
 import { GJRPage } from "./pages/gjr";
 import { LibrexPage } from "./pages/librex";
@@ -13,9 +12,6 @@ function App() {
   return (
     <>
       <Router>
-
-        {/* <Home /> */}
-
         <Routes>
           <Route path="/" Component={Home} exact />
           <Route path="/about" Component={AboutPage} exact />
@@ -25,7 +21,6 @@ function App() {
           <Route path="/gjr" Component={GJRPage} exact />
           <Route path="/librex" Component={LibrexPage} exact />
         </Routes>
-      
       </Router>
     </>
   );

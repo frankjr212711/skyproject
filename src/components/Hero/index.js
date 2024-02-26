@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Video from "../../videos/video-1.mp4";
+import Video from "../../videos/video-3.mp4";
 // import { Button } from "../Button/ButtonElement";
 import {
   HeroContainer,
@@ -20,7 +20,7 @@ export const HeroMain = () => {
     setHover(!hover);
   };
   return (
-    <HeroContainer >
+    <HeroContainer>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
       </HeroBg>
@@ -28,7 +28,7 @@ export const HeroMain = () => {
       <HeroContent>
         <HeroH1>Your one-stop place</HeroH1>
         <HeroP>
-          Book a Design Visit today & lets work towards your modern style  home
+          Book a Design Visit today & lets work towards your modern style home
         </HeroP>
         <HeroBtnWrapper>
           {/* <Button

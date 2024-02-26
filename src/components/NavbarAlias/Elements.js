@@ -6,11 +6,9 @@ export const NavContainer = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 90px;
   background: ${({ scrollNav }) =>
-    scrollNav
-    ? "rgba(255, 255, 255)"
-      : "rgba(0,74,125)"};
+    scrollNav ? "rgba(255, 255, 255)" : "rgba(0,74,125)"};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
   font-family: "Jost";
@@ -23,7 +21,7 @@ export const NavTop = styled.div`
   height: 40px;
   border-bottom: 1px solid
     ${({ scrollNav }) =>
-    scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .1)"};
+      scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .1)"};
 `;
 export const NavTopSpan = styled.span`
   display: flex;
@@ -45,7 +43,7 @@ export const NavWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: .3s ease;
+  transition: 0.3s ease;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -68,17 +66,17 @@ export const NavMenu = styled.ul`
 `;
 
 export const MegaDropDown = styled.div`
-  position: fixed; 
+  position: fixed;
   top: 100px;
   left: 0;
-  width: 100%; 
+  width: 100%;
 
   height: 420px;
   background: whitesmoke;
-  transition: .3s ease;
+  transition: 0.3s ease;
   opacity: 0;
   visibility: hidden;
-`
+`;
 
 export const DropDown = styled.div`
   position: absolute; 
@@ -94,7 +92,7 @@ export const DropDown = styled.div`
   @media screen and (max-width: 800px) {
     left; 100%;
   }
-`
+`;
 
 export const NavLi = styled.li`
   height: 100%;
@@ -124,7 +122,6 @@ export const NavLink = styled(Link)`
   height: 100%;
   padding: 0 1rem;
 
-
   &:before {
     content: "";
     position: absolute;
@@ -133,7 +130,8 @@ export const NavLink = styled(Link)`
     transform: translateX(-50%);
     width: 0%;
     height: 3px;
-    background: ${({ scrollNav }) => (scrollNav ? "rgba(0,74,125, .6)" : "#fff")};
+    background: ${({ scrollNav }) =>
+      scrollNav ? "rgba(0,74,125, .6)" : "#fff"};
     transition: 0.2s ease;
   }
   &:hover:before {
@@ -148,16 +146,16 @@ export const MenuBtn = styled.div`
   cursor: pointer;
   display: none;
   &:hover :nth-child(1) {
-    transform: translate(-45%, 100%) rotate(140deg)
+    transform: translate(-45%, 100%) rotate(140deg);
   }
   &:hover :nth-child(3) {
-    transform: translate(-50%, -180%) rotate(-140deg)
+    transform: translate(-50%, -180%) rotate(-140deg);
   }
 
   @media screen and (max-width: 768px) {
     display: block;
   }
-`
+`;
 
 export const MenuBtnSpan = styled.span`
   position: absolute;
@@ -167,42 +165,35 @@ export const MenuBtnSpan = styled.span`
   width: 25px;
   height: 4px;
   background: ${({ scrollNav }) => (scrollNav ? "#424242" : "#fff")};
-  transition: .3s ease;
+  transition: 0.3s ease;
 
-
-  &:nth-child(1)
-   {
+  &:nth-child(1) {
     top: 25%;
-
   }
   &:nth-child(3) {
     top: 75%;
   }
-
-`
-
+`;
 
 export const MegaDropWrapper = styled.div`
   width: 80%;
   height: 95%;
   margin: 10px auto;
   border: 1px solid #ddd;
-
-`
+`;
 
 export const DropLink = styled(Link)`
   display: block;
-  padding: .5rem 0 .5rem .5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
   font-size: 17px;
   color: #424242;
-  
+
   &:not(:last-child) {
     border-bottom: 1px solid #ddd;
   }
 
   &:hover {
-    background: rgba(0,74,125, .6);
+    background: rgba(0, 74, 125, 0.6);
     color: whitesmoke;
   }
-`
-
+`;

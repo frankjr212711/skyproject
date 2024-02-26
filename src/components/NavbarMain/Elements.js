@@ -6,11 +6,11 @@ export const NavContainer = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 90px;
   background: ${({ scrollNav }) =>
     scrollNav
-    ? "rgba(255, 255, 255, .99)"
-      : "linear-gradient(to top, transparent, 35%, rgba(0,74,125, .6))"};
+      ? "rgba(255, 255, 255, .99)"
+      : "linear-gradient(to top, transparent, 45%, rgba(0,74,125, .6))"};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
   font-family: "Jost";
@@ -23,7 +23,7 @@ export const NavTop = styled.div`
   height: 40px;
   border-bottom: 1px solid
     ${({ scrollNav }) =>
-    scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
+      scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
 `;
 export const NavTopSpan = styled.span`
   display: flex;
@@ -35,7 +35,7 @@ export const NavTopSpan = styled.span`
 
 export const NavDown = styled.div`
   width: 100%;
-  height: 50px;
+  height: 40px;
 `;
 
 export const NavWrapper = styled.div`
@@ -45,7 +45,7 @@ export const NavWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: .3s ease;
+  transition: 0.3s ease;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -61,32 +61,32 @@ export const NavLogo = styled(Link)`
 `;
 
 export const NavMenu = styled.ul`
-  height: 30px;
+  height: 40px;
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
 export const MegaDropDown = styled.div`
-  position: fixed; 
-  top: 100px;
+  position: fixed;
+  top: 90px;
   left: 0;
-  width: 100%; 
+  width: 100%;
 
-  height: 480px;
+  height: 420px;
   background: rgba(255, 255, 255);
-  transition: .3s ease;
+  transition: 0.3s ease;
   opacity: 0;
   visibility: hidden;
   border-top: 1px solid #fefefe;
-`
+`;
 
 export const DropDown = styled.div`
   position: absolute; 
   top: 50px; 
   left: 50%;
   transform: translate(-50%, -0%);
-  width: 180px;
+  width: 200px;
   background: whitesmoke;
   background: rgba(255, 255, 255);
   transition: .3s ease;
@@ -96,7 +96,7 @@ export const DropDown = styled.div`
   @media screen and (max-width: 800px) {
     left; 100%;
   }
-`
+`;
 
 export const NavLi = styled.li`
   height: 100%;
@@ -112,12 +112,11 @@ export const NavLi = styled.li`
       opacity: .99;
       visibility: visible
     }
-    
   }
 `;
 
 export const NavLink = styled(Link)`
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
   position: relative;
@@ -125,7 +124,6 @@ export const NavLink = styled(Link)`
   align-items: center;
   height: 100%;
   padding: 0 1rem;
-
 
   &:before {
     content: "";
@@ -135,7 +133,8 @@ export const NavLink = styled(Link)`
     transform: translateX(-50%);
     width: 0%;
     height: 3px;
-    background: ${({ scrollNav }) => (scrollNav ? "rgba(0,74,125, .6)" : "#fff")};
+    background: ${({ scrollNav }) =>
+      scrollNav ? "rgba(0,74,125, .6)" : "#fff"};
     transition: 0.2s ease;
   }
   &:hover:before {
@@ -150,16 +149,16 @@ export const MenuBtn = styled.div`
   cursor: pointer;
   display: none;
   &:hover :nth-child(1) {
-    transform: translate(-45%, 100%) rotate(140deg)
+    transform: translate(-45%, 100%) rotate(140deg);
   }
   &:hover :nth-child(3) {
-    transform: translate(-50%, -180%) rotate(-140deg)
+    transform: translate(-50%, -180%) rotate(-140deg);
   }
 
   @media screen and (max-width: 768px) {
     display: block;
   }
-`
+`;
 
 export const MenuBtnSpan = styled.span`
   position: absolute;
@@ -169,20 +168,15 @@ export const MenuBtnSpan = styled.span`
   width: 25px;
   height: 4px;
   background: ${({ scrollNav }) => (scrollNav ? "#424242" : "#fff")};
-  transition: .3s ease;
+  transition: 0.3s ease;
 
-
-  &:nth-child(1)
-   {
+  &:nth-child(1) {
     top: 25%;
-
   }
   &:nth-child(3) {
     top: 75%;
   }
-
-`
-
+`;
 
 export const MegaDropWrapper = styled.div`
   width: 80%;
@@ -190,22 +184,27 @@ export const MegaDropWrapper = styled.div`
   margin: 12px auto;
   border: 1px solid #ddd;
 
-`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+`;
+export const MegaItem = styled.div`
+  border: 1px solid red;
+`;
 
 export const DropLink = styled(Link)`
   display: block;
-  padding: .5rem 0 .5rem .5rem;
+  padding: 1rem 0 1rem 0.5rem;
   font-size: 17px;
   color: #424242;
   border-top: 1px solid #eee;
- 
+
   &:hover {
-    background: rgba(0,74,125, .6);
+    background: rgba(0, 74, 125, 0.6);
     color: whitesmoke;
   }
-`
+`;
 export const MegaLink = styled(Link)`
   display: block;
   font-size: 24px;
   color: #424242;
-`
+`;
