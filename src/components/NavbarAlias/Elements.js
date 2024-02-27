@@ -8,7 +8,12 @@ export const NavContainer = styled.nav`
   width: 100%;
   height: 90px;
   background: ${({ scrollNav }) =>
-    scrollNav ? "rgba(255, 255, 255)" : "rgba(0,74,125)"};
+  scrollNav ? "rgba(255, 255, 255)" : "rgba(0,74,125)"};
+    
+  background: ${({ scrollNav }) =>
+  scrollNav ? "rgba(255, 255, 255)" : "rgba(76,89,39)"};
+
+
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
   font-family: "Jost";

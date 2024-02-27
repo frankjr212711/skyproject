@@ -103,7 +103,7 @@ export const NavbarMain = () => {
                           <FaSnowflake />
                       </LogoGJR>
                       <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
-                      <BtnGJR>VISIT PAGE</BtnGJR>
+                      <BtnGJR to='/skywalker'>VISIT PAGE</BtnGJR>
                       </BannerGJRWrap>
                     </BannerGJR>
                     <JobListingGJR>
@@ -141,7 +141,7 @@ export const NavbarMain = () => {
                           <FaSnowflake />
                       </LogoGJR>
                       <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
-                      <BtnGJR>VISIT PAGE</BtnGJR>
+                      <BtnGJR to='/gjr'>VISIT PAGE</BtnGJR>
                       </BannerGJRWrap>
                     </BannerGJR>
                     <JobListingGJR>
@@ -179,7 +179,7 @@ export const NavbarMain = () => {
                           <FaSnowflake />
                       </LogoGJR>
                       <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
-                      <BtnGJR>VISIT PAGE</BtnGJR>
+                      <BtnGJR to="/librex">VISIT PAGE</BtnGJR>
                       </BannerGJRWrap>
                     </BannerGJR>
                     <JobListingGJR>
