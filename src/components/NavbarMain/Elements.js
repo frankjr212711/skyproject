@@ -23,15 +23,24 @@ export const NavContainer = styled.nav`
     scrollnav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
   font-family: "Jost";
   z-index: 9999;
+
   transition: 0.3s ease;
 `;
 
+
+
+
+
+
 export const NavTop = styled.div`
   width: 100%;
+  padding: .5rem 0;
   border-bottom: 1px solid
     ${({ scrollnav }) =>
-      scrollnav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
-`;
+  scrollnav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
+  border-bottom: 1px solid rgba(255, 255, 255, .09);
+  `;
+
 export const NavTopSpan = styled.span`
   display: flex;
   align-items: center;
@@ -42,11 +51,12 @@ export const NavTopSpan = styled.span`
 
 export const NavDown = styled.div`
   width: 100%;
-  // height: 70px;
+  // height: 100px;
   // background: whitesmoke;
 
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(255, 255, 255, .09);
 `;
 
 export const NavWrapper = styled.div`
@@ -210,7 +220,7 @@ export const MegaDropWrapper = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 80px;
   @media screen and (max-width: 940px ) {
     width: 98%;
   }
@@ -299,10 +309,10 @@ width: 100%;
 height: 100%;
 
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(2, 1fr);
 justify-content: center;
 align-items: center;
-gap: 30px;
+gap: 60px;
 `
 
 export const JobItemLink = styled(Link)`
@@ -310,7 +320,7 @@ export const JobItemLink = styled(Link)`
   padding: .45rem 0;
   position: relative;
   transition: .2s ease;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(76,89,39, .2);
   &:hover {
     margin-left: 5px;
   }

@@ -1,8 +1,16 @@
 import { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import { FaLocationDot, FaTypo3 } from 'react-icons/fa6';
+import { GiVacuumCleaner } from "react-icons/gi";
+import { FcFilingCabinet } from "react-icons/fc";
+import {
+  FaEnvelope,
+  FaSearch,
+  FaPhone,
+ 
+  FaSnowflake
+} from "react-icons/fa";
 
-import { FaEnvelope, FaSearch, FaPhone, FaLocationArrow, FaSnowflake, FaArrowRight } from "react-icons/fa";
-import { GoArrowRight } from "react-icons/go";
 
 import {
   NavContainer,
@@ -103,8 +111,14 @@ export const NavbarMain = () => {
                       <BannerGJRWrap>
                         <LogoGJR>
                           <FaSnowflake />
-                      </LogoGJR>
-                      <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
+                        </LogoGJR>
+                        
+                        <TitleGJR>
+                          <h3>Skywalker Company Limited</h3>
+                        </TitleGJR>
+                        <TitleGJR>
+                          <h6>Learn more about our works & projects.</h6>
+                        </TitleGJR>
                       <BtnGJR to='/skywalker'>VISIT PAGE</BtnGJR>
                       </BannerGJRWrap>
                     </BannerGJR>
@@ -128,7 +142,8 @@ export const NavbarMain = () => {
 
                     <ContactDetails>
                       <ContactDetailsLink >
-                        <FaLocationArrow></FaLocationArrow>
+                        <FaLocationDot></FaLocationDot>
+
                       </ContactDetailsLink>
                     </ContactDetails>
                     
@@ -145,28 +160,37 @@ export const NavbarMain = () => {
                     <BannerGJR>
                       <BannerGJRWrap>
                         <LogoGJR>
-                          <FaSnowflake />
+                        <FcFilingCabinet />
                       </LogoGJR>
-                      <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
+                      <TitleGJR>
+                          <h3>GJR Company Limited</h3>
+                        </TitleGJR>
+                        <TitleGJR>
+                          <h6>Learn more about our works & projects.</h6>
+                        </TitleGJR>
                       <BtnGJR to='/gjr'>VISIT PAGE</BtnGJR>
                       </BannerGJRWrap>
                     </BannerGJR>
                     <JobListingGJR>
                       <JobListingGJRWrap>
+                      <JobListingItem>
                         <JobItemLink>Road Construction</JobItemLink>
                         <JobItemLink>Building Construction</JobItemLink>
                         <JobItemLink>Civil Works</JobItemLink>
                         <JobItemLink>Plumbing Works</JobItemLink>
+                        </JobListingItem>
+                        <JobListingItem>
                         <JobItemLink>General Merchant</JobItemLink>
                         <JobItemLink>Janitorial Services</JobItemLink>
                         <JobItemLink>Wood Works</JobItemLink>
                         <JobItemLink>Interior Designs</JobItemLink>
+                        </JobListingItem>
                       </JobListingGJRWrap>
                     </JobListingGJR>
 
                     <ContactDetails>
                       <ContactDetailsLink >
-                        <FaLocationArrow></FaLocationArrow>
+                        <FaLocationDot></FaLocationDot>
                       </ContactDetailsLink>
                     </ContactDetails>
                     
@@ -183,28 +207,37 @@ export const NavbarMain = () => {
                     <BannerGJR>
                       <BannerGJRWrap>
                         <LogoGJR>
-                          <FaSnowflake />
+                        <GiVacuumCleaner />
                       </LogoGJR>
-                      <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
+                      <TitleGJR>
+                          <h3>Librex Holdings</h3>
+                        </TitleGJR>
+                        <TitleGJR>
+                          <h6>Learn more about our works & projects.</h6>
+                        </TitleGJR>
                       <BtnGJR to="/librex">VISIT PAGE</BtnGJR>
                       </BannerGJRWrap>
                     </BannerGJR>
                     <JobListingGJR>
                       <JobListingGJRWrap>
+                      <JobListingItem>
                         <JobItemLink>Road Construction</JobItemLink>
                         <JobItemLink>Building Construction</JobItemLink>
                         <JobItemLink>Civil Works</JobItemLink>
                         <JobItemLink>Plumbing Works</JobItemLink>
+                        </JobListingItem>
+                        <JobListingItem>
                         <JobItemLink>General Merchant</JobItemLink>
                         <JobItemLink>Janitorial Services</JobItemLink>
                         <JobItemLink>Wood Works</JobItemLink>
                         <JobItemLink>Interior Designs</JobItemLink>
+                        </JobListingItem>
                       </JobListingGJRWrap>
                     </JobListingGJR>
 
                     <ContactDetails>
                       <ContactDetailsLink >
-                        <FaLocationArrow></FaLocationArrow>
+                        <FaLocationDot></FaLocationDot>
                       </ContactDetailsLink>
                     </ContactDetails>
                     
