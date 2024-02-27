@@ -38,7 +38,7 @@ export const NavTop = styled.div`
   border-bottom: 1px solid
     ${({ scrollnav }) =>
   scrollnav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
-  border-bottom: 1px solid rgba(255, 255, 255, .09);
+  // border-bottom: 1px solid rgba(255, 255, 255, .09);
   `;
 
 export const NavTopSpan = styled.span`
@@ -109,7 +109,7 @@ export const MegaDropDown = styled.div`
   align-items: center;
   justify-content: center;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
-  border-top: 1px solid #fefefe;
+  // border-top: 1px solid #fefefe;
 `;
 
 export const DropDown = styled.div`
@@ -135,12 +135,12 @@ export const NavLi = styled.li`
   position: relative;
 
   &:hover ${MegaDropDown}{
-      opacity: .99;
+      opacity: 1;
       visibility: visible
     }
 
     &:hover ${DropDown}{
-      opacity: .99;
+      opacity: 1;
       visibility: visible
     }
   }
@@ -215,7 +215,7 @@ export const MenuBtnSpan = styled.span`
 export const MegaDropWrapper = styled.div`
   width: 80%;
   height: 80%;
-  border: 1px solid #ddd;
+  // border: 1px solid #ddd;
 
   display: grid;
   align-items: center;
@@ -343,8 +343,8 @@ export const ContactDetailsLink = styled(Link)``
 
 export const DropImageContainer = styled.div`
 height: 100%; 
-
-  border: 1px solid red;
+  width: 100%; 
+  // border: 1px solid red;
 `
 export const DropImageWrap = styled.div`
   width: 100%; 
