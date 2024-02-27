@@ -7,19 +7,19 @@ export const NavContainer = styled.nav`
   left: 0;
   width: 100%;
   height: 90px;
-  background: ${({ scrollNav }) => scrollNav ? "rgba(255, 255, 255, .99)"
+  background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255, .99)"
   : "linear-gradient(to top, transparent, 45%, rgba(0,74,125, .6))"};
     
-    background: ${({ scrollNav }) => scrollNav ? "rgba(255, 255, 255, .99)"
+    background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255, .99)"
     : "linear-gradient(to top, transparent, 45%, rgba(117, 79, 50, .99))"};
       
 
-    background: ${({ scrollNav }) => scrollNav ? "rgba(255, 255, 255, .99)"
-    : "linear-gradient(to top, transparent, 45%, rgba(0, 0, 0, .6))"};
+    background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255, .99)"
+    : "linear-gradient(to top, transparent, 75%, rgba(0, 0, 0, .5))"};
 
 
-  box-shadow: ${({ scrollNav }) =>
-    scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
+  box-shadow: ${({ scrollnav }) =>
+    scrollnav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
   font-family: "Jost";
   z-index: 9999;
   transition: 0.3s ease;
@@ -29,14 +29,14 @@ export const NavTop = styled.div`
   width: 100%;
   height: 40px;
   border-bottom: 1px solid
-    ${({ scrollNav }) =>
-      scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
+    ${({ scrollnav }) =>
+      scrollnav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
 `;
 export const NavTopSpan = styled.span`
   display: flex;
   align-items: center;
   column-gap: 10px;
-  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
+  color: ${({ scrollnav }) => (scrollnav ? "#111" : "#fff")};
   font-size: 14px;
 `;
 
@@ -54,9 +54,16 @@ export const NavWrapper = styled.div`
   justify-content: space-between;
   transition: 0.3s ease;
 
+
+  @media screen and (max-width: 940px ) {
+    width: 95%;
+  }
+  @media screen and (max-width: 840px ) {
+    width: 95%;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 `;
 
@@ -64,7 +71,7 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
+  color: ${({ scrollnav }) => (scrollnav ? "#111" : "#fff")};
 `;
 
 export const NavMenu = styled.ul`
@@ -79,7 +86,7 @@ export const MegaDropDown = styled.div`
   top: 90px;
   left: 0;
   width: 100%;
-  height: 350px;
+  height: 400px;
   background: rgba(255, 255, 255);
   transition: 0.3s ease;
   opacity: 0;
@@ -87,6 +94,7 @@ export const MegaDropDown = styled.div`
   display: flex; 
   align-items: center;
   justify-content: center;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
   border-top: 1px solid #fefefe;
 `;
 
@@ -99,6 +107,7 @@ export const DropDown = styled.div`
   background: whitesmoke;
   background: rgba(255, 255, 255);
   transition: .3s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
   opacity: 0;
   visibility: hidden;
 
@@ -127,7 +136,7 @@ export const NavLi = styled.li`
 export const NavLink = styled(Link)`
   font-size: 17px;
   font-weight: 400;
-  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
+  color: ${({ scrollnav }) => (scrollnav ? "#111" : "#fff")};
   position: relative;
   display: flex;
   align-items: center;
@@ -142,8 +151,8 @@ export const NavLink = styled(Link)`
     transform: translateX(-50%);
     width: 0%;
     height: 3px;
-    background: ${({ scrollNav }) =>
-      scrollNav ? "rgba(0,74,125, .6)" : "#fff"};
+    background: ${({ scrollnav }) =>
+      scrollnav ? "rgba(0,74,125, .6)" : "#fff"};
     transition: 0.2s ease;
   }
   &:hover:before {
@@ -176,7 +185,7 @@ export const MenuBtnSpan = styled.span`
   transform: translate(-50%, -50%);
   width: 25px;
   height: 4px;
-  background: ${({ scrollNav }) => (scrollNav ? "#424242" : "#fff")};
+  background: ${({ scrollnav }) => (scrollnav ? "#424242" : "#fff")};
   transition: 0.3s ease;
 
   &:nth-child(1) {
@@ -189,12 +198,21 @@ export const MenuBtnSpan = styled.span`
 
 export const MegaDropWrapper = styled.div`
   width: 80%;
-  height: 95%;
+  height: 80%;
   border: 1px solid #ddd;
 
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 940px ) {
+    width: 98%;
+  }
+
+  @media screen and (max-width: 840px ) {
+    width: 95%;
+    border: 1px solid red;
+  }
 `;
 export const MegaItem = styled.div`
   border: 1px solid #f8f8f8;
@@ -209,7 +227,11 @@ export const DropLink = styled(Link)`
   padding: 1rem 0 1rem 0.5rem;
   font-size: 17px;
   color: #424242;
+  
+  &:not(:first-child) {
   border-top: 1px solid #eee;
+    
+  }
 
   &:hover {
     background: rgba(0, 74, 125, 0.6);

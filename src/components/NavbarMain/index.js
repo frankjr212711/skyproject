@@ -24,21 +24,21 @@ import {
 } from "./Elements";
 
 export const NavbarMain = () => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [scrollnav, setscrollnav] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
-      setScrollNav(true);
+      setscrollnav(true);
     } else {
-      setScrollNav(false);
+      setscrollnav(false);
     }
   };
 
   const toggleColor = () => {
     if (window.scrollY >= 30) {
-      setScrollNav(true);
+      setscrollnav('true');
     } else {
-      setScrollNav(false);
+      setscrollnav('false');
     }
   };
 
@@ -50,15 +50,15 @@ export const NavbarMain = () => {
   }, []);
   return (
     <>
-      <NavContainer scrollNav={scrollNav}>
-        <NavTop scrollNav={scrollNav}>
+      <NavContainer scrollnav={scrollnav}>
+        <NavTop scrollnav={scrollnav}>
           <NavWrapper>
-            <NavTopSpan scrollNav={scrollNav}>
+            <NavTopSpan scrollnav={scrollnav}>
               <FaEnvelope />
               info@skywalkergh.com
             </NavTopSpan>
 
-            <NavTopSpan scrollNav={scrollNav}>
+            <NavTopSpan scrollnav={scrollnav}>
               <FaPhone />
               +233 245 855 385 | +233 245 855 385
             </NavTopSpan>
@@ -66,22 +66,22 @@ export const NavbarMain = () => {
         </NavTop>
         <NavDown>
           <NavWrapper>
-            <NavLogo to="/" onClick={toggleHome} scrollNav={scrollNav}>
+            <NavLogo to="/" onClick={toggleHome} scrollnav={scrollnav}>
               <FaSearch />
             </NavLogo>
             <NavMenu>
               <NavLi>
-                <NavLink to="/" scrollNav={scrollNav}>
+                <NavLink to="/" scrollnav={scrollnav}>
                   Home
                 </NavLink>
               </NavLi>
               <NavLi>
-                <NavLink to="/about" scrollNav={scrollNav}>
+                <NavLink to="/about" scrollnav={scrollnav}>
                   Why Us?
                 </NavLink>
               </NavLi>
               <NavLi>
-                <NavLink to="/company" scrollNav={scrollNav}>
+                <NavLink to="/company" scrollnav={scrollnav}>
                   Company
                 </NavLink>
                 <MegaDropDown>
@@ -99,7 +99,7 @@ export const NavbarMain = () => {
                 </MegaDropDown>
               </NavLi>
               <NavLi>
-                <NavLink to="/info" scrollNav={scrollNav}>
+                <NavLink to="/info" scrollnav={scrollnav}>
                   Info
                 </NavLink>
                 <DropDown>
@@ -111,9 +111,9 @@ export const NavbarMain = () => {
             </NavMenu>
 
             <MenuBtn>
-              <MenuBtnSpan scrollNav={scrollNav}></MenuBtnSpan>
-              <MenuBtnSpan scrollNav={scrollNav}></MenuBtnSpan>
-              <MenuBtnSpan scrollNav={scrollNav}></MenuBtnSpan>
+              <MenuBtnSpan scrollnav={scrollnav}></MenuBtnSpan>
+              <MenuBtnSpan scrollnav={scrollnav}></MenuBtnSpan>
+              <MenuBtnSpan scrollnav={scrollnav}></MenuBtnSpan>
             </MenuBtn>
           </NavWrapper>
         </NavDown>
