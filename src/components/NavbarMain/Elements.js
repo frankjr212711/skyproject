@@ -156,8 +156,8 @@ display: inline-block;
     transform: translateX(-50%);
     width: 0%;
     height: 5px;
-    background: ${({ scrollnav }) =>
-      scrollnav ? "rgba(0,74,125, .6)" : "#fff"};
+    background: ${({ scrollnav }) => scrollnav ? "rgba(0,74,125, .6)" : "#fff"};
+    background: ${({ scrollnav }) => scrollnav ? "rgba(76,89,39)" : "rgba(76,89,39)"};
     transition: 0.2s ease;
   }
   &:hover:before {
@@ -232,14 +232,14 @@ export const DropLink = styled(Link)`
   padding: 1rem 0 1rem 0.5rem;
   font-size: 17px;
   color: #424242;
-  
+
   &:not(:first-child) {
   border-top: 1px solid #eee;
-    
   }
 
   &:hover {
     background: rgba(0, 74, 125, 0.6);
+    background: rgba(76,89,39);
     color: whitesmoke;
   }
 `;
@@ -248,3 +248,26 @@ export const MegaLink = styled(Link)`
   font-size: 24px;
   color: #424242;
 `;
+
+// BannerGJR,
+// BannerGJRWrap,
+// LogoGJR, 
+// TitleGJR,
+// BtnGJR,
+// JobListingGJR,
+// JobListingGJRWrap,
+// JobItemLink, 
+// ContactDetails,
+// ContactDetailsLink
+
+
+export const BannerGJR = styled.div``
+export const BannerGJRWrap = styled.div``
+export const LogoGJR = styled.div``
+export const TitleGJR = styled.h1``
+export const BtnGJR = styled(Link)``
+export const JobListingGJR = styled.div``
+export const JobListingGJRWrap = styled.div``
+export const JobItemLink = styled(Link)``
+export const ContactDetails = styled.div``
+export const ContactDetailsLink = styled(Link)``

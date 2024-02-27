@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 
-import { FaEnvelope, FaSearch, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaSearch, FaPhone, FaLocationArrow, FaSnowflake } from "react-icons/fa";
 
 import {
   NavContainer,
@@ -21,6 +21,17 @@ import {
   DropLink,
   MegaLink,
   MegaItem,
+
+  BannerGJR,
+  BannerGJRWrap,
+  LogoGJR, 
+  TitleGJR,
+  BtnGJR,
+  JobListingGJR,
+  JobListingGJRWrap,
+  JobItemLink, 
+  ContactDetails,
+  ContactDetailsLink
 } from "./Elements";
 
 export const NavbarMain = () => {
@@ -86,15 +97,34 @@ export const NavbarMain = () => {
                 </NavLink>
                 <MegaDropDown>
                   <MegaDropWrapper>
-                    <MegaItem>
-                      <MegaLink to="/skywalker">Skywalker Waters</MegaLink>
-                    </MegaItem>
-                    <MegaItem>
-                      <MegaLink to="/gjr">GJR Kitchens</MegaLink>
-                    </MegaItem>
-                    <MegaItem>
-                      <MegaLink to="/librex">Librex Holdings</MegaLink>
-                    </MegaItem>
+                    <BannerGJR>
+                      <BannerGJRWrap>
+                        <LogoGJR>
+                          <FaSnowflake />
+                      </LogoGJR>
+                      <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
+                      <BtnGJR>VISIT PAGE</BtnGJR>
+                      </BannerGJRWrap>
+                    </BannerGJR>
+                    <JobListingGJR>
+                      <JobListingGJRWrap>
+                        <JobItemLink>Road Construction</JobItemLink>
+                        <JobItemLink>Building Construction</JobItemLink>
+                        <JobItemLink>Civil Works</JobItemLink>
+                        <JobItemLink>Plumbing Works</JobItemLink>
+                        <JobItemLink>General Merchant</JobItemLink>
+                        <JobItemLink>Janitorial Services</JobItemLink>
+                        <JobItemLink>Wood Works</JobItemLink>
+                        <JobItemLink>Interior Designs</JobItemLink>
+                      </JobListingGJRWrap>
+                    </JobListingGJR>
+
+                    <ContactDetails>
+                      <ContactDetailsLink >
+                        <FaLocationArrow></FaLocationArrow>
+                      </ContactDetailsLink>
+                    </ContactDetails>
+                    
                   </MegaDropWrapper>
                 </MegaDropDown>
               </NavLi>
@@ -105,15 +135,34 @@ export const NavbarMain = () => {
                 </NavLink>
                 <MegaDropDown>
                   <MegaDropWrapper>
-                    <MegaItem>
-                      <MegaLink to="/skywalker">Skywalker Waters</MegaLink>
-                    </MegaItem>
-                    <MegaItem>
-                      <MegaLink to="/gjr">GJR Kitchens</MegaLink>
-                    </MegaItem>
-                    <MegaItem>
-                      <MegaLink to="/librex">Librex Holdings</MegaLink>
-                    </MegaItem>
+                    <BannerGJR>
+                      <BannerGJRWrap>
+                        <LogoGJR>
+                          <FaSnowflake />
+                      </LogoGJR>
+                      <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
+                      <BtnGJR>VISIT PAGE</BtnGJR>
+                      </BannerGJRWrap>
+                    </BannerGJR>
+                    <JobListingGJR>
+                      <JobListingGJRWrap>
+                        <JobItemLink>Road Construction</JobItemLink>
+                        <JobItemLink>Building Construction</JobItemLink>
+                        <JobItemLink>Civil Works</JobItemLink>
+                        <JobItemLink>Plumbing Works</JobItemLink>
+                        <JobItemLink>General Merchant</JobItemLink>
+                        <JobItemLink>Janitorial Services</JobItemLink>
+                        <JobItemLink>Wood Works</JobItemLink>
+                        <JobItemLink>Interior Designs</JobItemLink>
+                      </JobListingGJRWrap>
+                    </JobListingGJR>
+
+                    <ContactDetails>
+                      <ContactDetailsLink >
+                        <FaLocationArrow></FaLocationArrow>
+                      </ContactDetailsLink>
+                    </ContactDetails>
+                    
                   </MegaDropWrapper>
                 </MegaDropDown>
               </NavLi>
@@ -124,15 +173,34 @@ export const NavbarMain = () => {
                 </NavLink>
                 <MegaDropDown>
                   <MegaDropWrapper>
-                    <MegaItem>
-                      <MegaLink to="/skywalker">Skywalker Waters</MegaLink>
-                    </MegaItem>
-                    <MegaItem>
-                      <MegaLink to="/gjr">GJR Kitchens</MegaLink>
-                    </MegaItem>
-                    <MegaItem>
-                      <MegaLink to="/librex">Librex Holdings</MegaLink>
-                    </MegaItem>
+                    <BannerGJR>
+                      <BannerGJRWrap>
+                        <LogoGJR>
+                          <FaSnowflake />
+                      </LogoGJR>
+                      <TitleGJR><h3>Learn more about our works & projects.</h3></TitleGJR>
+                      <BtnGJR>VISIT PAGE</BtnGJR>
+                      </BannerGJRWrap>
+                    </BannerGJR>
+                    <JobListingGJR>
+                      <JobListingGJRWrap>
+                        <JobItemLink>Road Construction</JobItemLink>
+                        <JobItemLink>Building Construction</JobItemLink>
+                        <JobItemLink>Civil Works</JobItemLink>
+                        <JobItemLink>Plumbing Works</JobItemLink>
+                        <JobItemLink>General Merchant</JobItemLink>
+                        <JobItemLink>Janitorial Services</JobItemLink>
+                        <JobItemLink>Wood Works</JobItemLink>
+                        <JobItemLink>Interior Designs</JobItemLink>
+                      </JobListingGJRWrap>
+                    </JobListingGJR>
+
+                    <ContactDetails>
+                      <ContactDetailsLink >
+                        <FaLocationArrow></FaLocationArrow>
+                      </ContactDetailsLink>
+                    </ContactDetails>
+                    
                   </MegaDropWrapper>
                 </MegaDropDown>
               </NavLi>
