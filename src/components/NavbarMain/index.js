@@ -82,7 +82,45 @@ export const NavbarMain = () => {
               </NavLi>
               <NavLi>
                 <NavLink to="/company" scrollnav={scrollnav}>
-                  Company
+                  Skywalker Waters
+                </NavLink>
+                <MegaDropDown>
+                  <MegaDropWrapper>
+                    <MegaItem>
+                      <MegaLink to="/skywalker">Skywalker Waters</MegaLink>
+                    </MegaItem>
+                    <MegaItem>
+                      <MegaLink to="/gjr">GJR Kitchens</MegaLink>
+                    </MegaItem>
+                    <MegaItem>
+                      <MegaLink to="/librex">Librex Holdings</MegaLink>
+                    </MegaItem>
+                  </MegaDropWrapper>
+                </MegaDropDown>
+              </NavLi>
+
+              <NavLi>
+                <NavLink to="/company" scrollnav={scrollnav}>
+                  GJR Works
+                </NavLink>
+                <MegaDropDown>
+                  <MegaDropWrapper>
+                    <MegaItem>
+                      <MegaLink to="/skywalker">Skywalker Waters</MegaLink>
+                    </MegaItem>
+                    <MegaItem>
+                      <MegaLink to="/gjr">GJR Kitchens</MegaLink>
+                    </MegaItem>
+                    <MegaItem>
+                      <MegaLink to="/librex">Librex Holdings</MegaLink>
+                    </MegaItem>
+                  </MegaDropWrapper>
+                </MegaDropDown>
+              </NavLi>
+
+              <NavLi>
+                <NavLink to="/company" scrollnav={scrollnav}>
+                  Librex Holdings
                 </NavLink>
                 <MegaDropDown>
                   <MegaDropWrapper>
