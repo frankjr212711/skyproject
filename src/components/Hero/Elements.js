@@ -57,7 +57,8 @@ export const HeroContent = styled.div`
 `;
 export const HeroH1 = styled.h1`
   color: whitesmoke;
-  color: aliceblue;
+  // color: aliceblue;
+
   font-size: 68px;
   text-align: center;
 
