@@ -7,10 +7,17 @@ export const NavContainer = styled.nav`
   left: 0;
   width: 100%;
   height: 90px;
-  background: ${({ scrollNav }) =>
-    scrollNav
-      ? "rgba(255, 255, 255, .99)"
-      : "linear-gradient(to top, transparent, 45%, rgba(0,74,125, .6))"};
+  background: ${({ scrollNav }) => scrollNav ? "rgba(255, 255, 255, .99)"
+  : "linear-gradient(to top, transparent, 45%, rgba(0,74,125, .6))"};
+    
+    background: ${({ scrollNav }) => scrollNav ? "rgba(255, 255, 255, .99)"
+    : "linear-gradient(to top, transparent, 45%, rgba(117, 79, 50, .99))"};
+      
+
+    background: ${({ scrollNav }) => scrollNav ? "rgba(255, 255, 255, .99)"
+    : "linear-gradient(to top, transparent, 45%, rgba(0, 0, 0, .6))"};
+
+
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
   font-family: "Jost";
@@ -72,12 +79,14 @@ export const MegaDropDown = styled.div`
   top: 90px;
   left: 0;
   width: 100%;
-
-  height: 420px;
+  height: 350px;
   background: rgba(255, 255, 255);
   transition: 0.3s ease;
   opacity: 0;
   visibility: hidden;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid #fefefe;
 `;
 
@@ -181,14 +190,18 @@ export const MenuBtnSpan = styled.span`
 export const MegaDropWrapper = styled.div`
   width: 80%;
   height: 95%;
-  margin: 12px auto;
   border: 1px solid #ddd;
 
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
 `;
 export const MegaItem = styled.div`
-  border: 1px solid red;
+  border: 1px solid #f8f8f8;
+  height: 100%;
+  display: flex; 
+  justify-content: center;
+  padding: 2rem 0;
 `;
 
 export const DropLink = styled(Link)`
