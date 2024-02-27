@@ -151,7 +151,7 @@ export const NavbarMain = () => {
                     <DropImageContainer>
                       <DropImageWrap>
                         {/* <img src="../images/gjr-01.jpeg" alt="" /> */}
-                        <DropImageGJR src={ImgBannerSky}></DropImageGJR>
+                        <DropImageGJR src={LogoSky}></DropImageGJR>
                       </DropImageWrap>
                     </DropImageContainer>
 

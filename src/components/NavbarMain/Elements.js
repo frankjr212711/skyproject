@@ -273,7 +273,7 @@ export const BannerGJRWrap = styled.div`
 export const LogoGJR = styled(Link)`
   font-size: 40px;
   width: 100px;
-  height: 80px;
+  height: 100px;
   margin-bottom: 10px;
 
 `
@@ -349,7 +349,6 @@ height: 100%;
 export const DropImageWrap = styled.div`
   width: 100%; 
   height: 100%;
-  background: red;
 `
 export const DropImageGJR = styled.img`
   width: 100%; 
