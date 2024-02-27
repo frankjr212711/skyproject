@@ -6,7 +6,7 @@ export const NavContainer = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  // height: 90px;
   background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255, .99)"
   : "linear-gradient(to top, transparent, 45%, rgba(0,74,125, .6))"};
     
@@ -27,7 +27,6 @@ export const NavContainer = styled.nav`
 
 export const NavTop = styled.div`
   width: 100%;
-  height: 40px;
   border-bottom: 1px solid
     ${({ scrollnav }) =>
       scrollnav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
@@ -42,13 +41,18 @@ export const NavTopSpan = styled.span`
 
 export const NavDown = styled.div`
   width: 100%;
-  height: 40px;
+  // height: 70px;
+  // background: whitesmoke;
+
+  display: flex;
+  align-items: center;
 `;
 
 export const NavWrapper = styled.div`
   width: 80%;
   height: 100%;
   margin: auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,7 +79,6 @@ export const NavLogo = styled(Link)`
 `;
 
 export const NavMenu = styled.ul`
-  height: 40px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -83,7 +86,7 @@ export const NavMenu = styled.ul`
 
 export const MegaDropDown = styled.div`
   position: fixed;
-  top: 90px;
+  top: 85px;
   left: 0;
   width: 100%;
   height: 400px;
@@ -100,7 +103,7 @@ export const MegaDropDown = styled.div`
 
 export const DropDown = styled.div`
   position: absolute; 
-  top: 50px; 
+  top: 64px;
   left: 50%;
   transform: translate(-50%, -0%);
   width: 200px;
@@ -117,7 +120,6 @@ export const DropDown = styled.div`
 `;
 
 export const NavLi = styled.li`
-  height: 100%;
   display: inline-block;
   position: relative;
 
@@ -138,19 +140,22 @@ export const NavLink = styled(Link)`
   font-weight: 400;
   color: ${({ scrollnav }) => (scrollnav ? "#111" : "#fff")};
   position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 1rem;
+display: inline-block;
+  padding: 20px 1rem;
+
+
+
+  // border: 1px solid red;
+
 
   &:before {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 94%;
     left: 50%;
     transform: translateX(-50%);
     width: 0%;
-    height: 3px;
+    height: 5px;
     background: ${({ scrollnav }) =>
       scrollnav ? "rgba(0,74,125, .6)" : "#fff"};
     transition: 0.2s ease;
