@@ -97,7 +97,7 @@ export const NavMenu = styled.ul`
 
 export const MegaDropDown = styled.div`
   position: fixed;
-  top: 85px;
+  top: 102px;
   left: 0;
   width: 100%;
   height: 400px;
@@ -215,12 +215,12 @@ export const MenuBtnSpan = styled.span`
 export const MegaDropWrapper = styled.div`
   width: 80%;
   height: 80%;
-  // border: 1px solid #ddd;
+  border: 1px solid #ddd;
 
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 80px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   @media screen and (max-width: 940px ) {
     width: 98%;
   }
@@ -263,46 +263,39 @@ export const BannerGJR = styled.div`
 export const BannerGJRWrap = styled.div`
   width: 100%;
   height: 100%;
-  transform: scale(.98);
   display: flex; 
   flex-direction: column;
-  align-items: space-between;
+  align-items: flex-start;
+  // align-items: space-between;
   cursor: pointer;
-  transition: .3s ease;
-
-  &:hover {
-    transform: scale(1);
-  }
+  transition: .2s ease;
 `
 export const LogoGJR = styled(Link)`
-  font-size: 55px;
+  font-size: 40px;
+  width: 100px;
+  height: 80px;
+  margin-bottom: 10px;
 
 `
 export const TitleGJR = styled.h1`
-  line-height: 1.2;
-  flex: 1;
+font-size: 25px;
 `
+export const TextGJR = styled.p`
 
+
+`
 export const BtnGJR = styled(Link)`
-  display: inline-block;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
-  padding: 1rem 2.5rem;
+  padding: .5rem;
   background:  rgba(76,89,39);
   color: #fff;
-  outline: none; 
+  margin-top: 3rem;
   text-align: center;
   border: 1px solid  rgba(76,89,39);
-  transform: scale(1);
-  transition: .2s ease;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 `
 export const JobListingGJR = styled.div`
 height: 100%;
-grid-column: span 2;
 `
 export const JobListingGJRWrap = styled.div`
 width: 100%;
@@ -312,7 +305,7 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 justify-content: center;
 align-items: center;
-gap: 60px;
+gap: 20px;
 `
 
 export const JobItemLink = styled(Link)`
@@ -339,9 +332,30 @@ export const JobItemLink = styled(Link)`
     width: 100%;
   }
 `
-export const ContactDetails = styled.div``
-export const ContactDetailsLink = styled(Link)``
 
 export const JobListingItem = styled.div`
 
+`
+
+export const ContactDetails = styled.div``
+export const ContactDetailsLink = styled(Link)``
+
+
+export const DropImageContainer = styled.div`
+height: 100%; 
+
+  border: 1px solid red;
+`
+export const DropImageWrap = styled.div`
+  width: 100%; 
+  height: 100%;
+  background: red;
+`
+export const DropImageGJR = styled.img`
+  width: 100%; 
+  height: 100%; 
+`
+export const LogoImgGJR = styled.img`
+  width: 100%; 
+  height: 100%; 
 `

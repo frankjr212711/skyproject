@@ -3,6 +3,12 @@ import { animateScroll as scroll } from "react-scroll";
 import { FaLocationDot, FaTypo3 } from 'react-icons/fa6';
 import { GiVacuumCleaner } from "react-icons/gi";
 import { FcFilingCabinet } from "react-icons/fc";
+import imgGJR from "../../images/gjr-img-01.jpg";
+import ImgBannerGJR from "../../images/gjr-img-02.jpg";
+import LogoSky from "../../images/sky-img-11.png";
+import ImgBannerSky from "../../images/sky-img-abt-01.jpg";
+import LogoLib from "../../images/lib-img-pam-01.jpg";
+import ImgBannerLib from "../../images/lib-img-pam-01.jpg";
 import {
   FaEnvelope,
   FaSearch,
@@ -28,20 +34,21 @@ import {
   MegaDropWrapper,
   DropDown,
   DropLink,
-  MegaLink,
-  MegaItem,
-
   BannerGJR,
   BannerGJRWrap,
-  LogoGJR, 
+
   TitleGJR,
   BtnGJR,
+  TextGJR, 
   JobListingGJR,
   JobListingGJRWrap,
   JobItemLink, 
-  ContactDetails,
-  ContactDetailsLink,
-  JobListingItem
+  LogoImgGJR,
+  LogoGJR,
+  JobListingItem,
+  DropImageContainer,
+  DropImageWrap,
+  DropImageGJR
 } from "./Elements";
 
 export const NavbarMain = () => {
@@ -109,44 +116,45 @@ export const NavbarMain = () => {
                   <MegaDropWrapper>
                     <BannerGJR>
                       <BannerGJRWrap>
-                        <LogoGJR>
-                          <FaSnowflake />
+                        <LogoGJR >
+                          {/* <FaSnowflake /> */}
+                          <LogoImgGJR src={LogoSky}></LogoImgGJR>
                         </LogoGJR>
                         
                         <TitleGJR>
                           <h3>Skywalker Company Limited</h3>
                         </TitleGJR>
-                        <TitleGJR>
-                          <h6>Learn more about our works & projects.</h6>
-                        </TitleGJR>
+                        <TextGJR>
+                          Water never tasted soo good...
+                        </TextGJR>
                       <BtnGJR to='/skywalker'>VISIT PAGE</BtnGJR>
                       </BannerGJRWrap>
                     </BannerGJR>
                     <JobListingGJR>
                       <JobListingGJRWrap>
                         <JobListingItem>
-                        <JobItemLink>Road Construction</JobItemLink>
-                        <JobItemLink>Building Construction</JobItemLink>
-                        <JobItemLink>Civil Works</JobItemLink>
-                        <JobItemLink>Plumbing Works</JobItemLink>
+                        <JobItemLink>Sachet water production </JobItemLink>
+                        <JobItemLink>Bottle waters </JobItemLink>
+                        <JobItemLink>Dispenser bottle water</JobItemLink>
+                        <JobItemLink>Water dispensers</JobItemLink>
                         </JobListingItem>
-                        <JobListingItem>
+                        {/* <JobListingItem>
                         <JobItemLink>General Merchant</JobItemLink>
                         <JobItemLink>Janitorial Services</JobItemLink>
                         <JobItemLink>Wood Works</JobItemLink>
                         <JobItemLink>Interior Designs</JobItemLink>
-                        </JobListingItem>
+                        </JobListingItem> */}
                        
                       </JobListingGJRWrap>
                     </JobListingGJR>
 
-                    <ContactDetails>
-                      <ContactDetailsLink >
-                        <FaLocationDot></FaLocationDot>
+                    <DropImageContainer>
+                      <DropImageWrap>
+                        {/* <img src="../images/gjr-01.jpeg" alt="" /> */}
+                        <DropImageGJR src={ImgBannerSky}></DropImageGJR>
+                      </DropImageWrap>
+                    </DropImageContainer>
 
-                      </ContactDetailsLink>
-                    </ContactDetails>
-                    
                   </MegaDropWrapper>
                 </MegaDropDown>
               </NavLi>
@@ -160,7 +168,7 @@ export const NavbarMain = () => {
                     <BannerGJR>
                       <BannerGJRWrap>
                         <LogoGJR>
-                        <FcFilingCabinet />
+                        <LogoImgGJR src={imgGJR}></LogoImgGJR>
                       </LogoGJR>
                       <TitleGJR>
                           <h3>GJR Company Limited</h3>
@@ -188,11 +196,11 @@ export const NavbarMain = () => {
                       </JobListingGJRWrap>
                     </JobListingGJR>
 
-                    <ContactDetails>
-                      <ContactDetailsLink >
-                        <FaLocationDot></FaLocationDot>
-                      </ContactDetailsLink>
-                    </ContactDetails>
+                    <DropImageContainer>
+                      <DropImageWrap>
+                        <DropImageGJR src={ImgBannerGJR}></DropImageGJR>
+                      </DropImageWrap>
+                    </DropImageContainer>
                     
                   </MegaDropWrapper>
                 </MegaDropDown>
@@ -207,7 +215,7 @@ export const NavbarMain = () => {
                     <BannerGJR>
                       <BannerGJRWrap>
                         <LogoGJR>
-                        <GiVacuumCleaner />
+                        <LogoImgGJR src={LogoLib}></LogoImgGJR>
                       </LogoGJR>
                       <TitleGJR>
                           <h3>Librex Holdings</h3>
@@ -221,25 +229,25 @@ export const NavbarMain = () => {
                     <JobListingGJR>
                       <JobListingGJRWrap>
                       <JobListingItem>
-                        <JobItemLink>Road Construction</JobItemLink>
-                        <JobItemLink>Building Construction</JobItemLink>
-                        <JobItemLink>Civil Works</JobItemLink>
-                        <JobItemLink>Plumbing Works</JobItemLink>
+                        <JobItemLink>Crystello</JobItemLink>
+                        <JobItemLink>Pamello</JobItemLink>
+                        <JobItemLink>Waterello</JobItemLink>
+                        <JobItemLink>Ritello</JobItemLink>
                         </JobListingItem>
-                        <JobListingItem>
+                        {/* <JobListingItem>
                         <JobItemLink>General Merchant</JobItemLink>
                         <JobItemLink>Janitorial Services</JobItemLink>
                         <JobItemLink>Wood Works</JobItemLink>
                         <JobItemLink>Interior Designs</JobItemLink>
-                        </JobListingItem>
+                        </JobListingItem> */}
                       </JobListingGJRWrap>
                     </JobListingGJR>
 
-                    <ContactDetails>
-                      <ContactDetailsLink >
-                        <FaLocationDot></FaLocationDot>
-                      </ContactDetailsLink>
-                    </ContactDetails>
+                    <DropImageContainer>
+                      <DropImageWrap>
+                        <DropImageGJR src={ImgBannerLib}></DropImageGJR>
+                      </DropImageWrap>
+                    </DropImageContainer>
                     
                   </MegaDropWrapper>
                 </MegaDropDown>
