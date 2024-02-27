@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 
-import { FaEnvelope, FaSearch, FaPhone, FaLocationArrow, FaSnowflake } from "react-icons/fa";
+import { FaEnvelope, FaSearch, FaPhone, FaLocationArrow, FaSnowflake, FaArrowRight } from "react-icons/fa";
+import { GoArrowRight } from "react-icons/go";
 
 import {
   NavContainer,
@@ -31,7 +32,8 @@ import {
   JobListingGJRWrap,
   JobItemLink, 
   ContactDetails,
-  ContactDetailsLink
+  ContactDetailsLink,
+  JobListingItem
 } from "./Elements";
 
 export const NavbarMain = () => {
@@ -108,14 +110,19 @@ export const NavbarMain = () => {
                     </BannerGJR>
                     <JobListingGJR>
                       <JobListingGJRWrap>
+                        <JobListingItem>
                         <JobItemLink>Road Construction</JobItemLink>
                         <JobItemLink>Building Construction</JobItemLink>
                         <JobItemLink>Civil Works</JobItemLink>
                         <JobItemLink>Plumbing Works</JobItemLink>
+                        </JobListingItem>
+                        <JobListingItem>
                         <JobItemLink>General Merchant</JobItemLink>
                         <JobItemLink>Janitorial Services</JobItemLink>
                         <JobItemLink>Wood Works</JobItemLink>
                         <JobItemLink>Interior Designs</JobItemLink>
+                        </JobListingItem>
+                       
                       </JobListingGJRWrap>
                     </JobListingGJR>
 

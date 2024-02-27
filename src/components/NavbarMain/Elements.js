@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
 
 export const NavContainer = styled.nav`
   position: fixed;
@@ -204,28 +205,21 @@ export const MenuBtnSpan = styled.span`
 export const MegaDropWrapper = styled.div`
   width: 80%;
   height: 80%;
-  border: 1px solid #ddd;
+  // border: 1px solid #ddd;
 
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   @media screen and (max-width: 940px ) {
     width: 98%;
   }
 
   @media screen and (max-width: 840px ) {
     width: 95%;
-    border: 1px solid red;
   }
 `;
-export const MegaItem = styled.div`
-  border: 1px solid #f8f8f8;
-  height: 100%;
-  display: flex; 
-  justify-content: center;
-  padding: 2rem 0;
-`;
+
 
 export const DropLink = styled(Link)`
   display: block;
@@ -249,25 +243,95 @@ export const MegaLink = styled(Link)`
   color: #424242;
 `;
 
-// BannerGJR,
-// BannerGJRWrap,
-// LogoGJR, 
-// TitleGJR,
-// BtnGJR,
-// JobListingGJR,
-// JobListingGJRWrap,
-// JobItemLink, 
-// ContactDetails,
-// ContactDetailsLink
 
 
-export const BannerGJR = styled.div``
-export const BannerGJRWrap = styled.div``
-export const LogoGJR = styled.div``
-export const TitleGJR = styled.h1``
-export const BtnGJR = styled(Link)``
-export const JobListingGJR = styled.div``
-export const JobListingGJRWrap = styled.div``
-export const JobItemLink = styled(Link)``
+export const BannerGJR = styled.div`
+  height: 100%;
+  // border: 1px solid red;
+
+`
+export const BannerGJRWrap = styled.div`
+  width: 100%;
+  height: 100%;
+  transform: scale(.98);
+  display: flex; 
+  flex-direction: column;
+  align-items: space-between;
+  cursor: pointer;
+  transition: .3s ease;
+
+  &:hover {
+    transform: scale(1);
+  }
+`
+export const LogoGJR = styled(Link)`
+  font-size: 55px;
+
+`
+export const TitleGJR = styled.h1`
+  line-height: 1.2;
+  flex: 1;
+`
+
+export const BtnGJR = styled(Link)`
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  background:  rgba(76,89,39);
+  color: #fff;
+  outline: none; 
+  text-align: center;
+  border: 1px solid  rgba(76,89,39);
+  transform: scale(1);
+  transition: .2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`
+export const JobListingGJR = styled.div`
+height: 100%;
+grid-column: span 2;
+`
+export const JobListingGJRWrap = styled.div`
+width: 100%;
+height: 100%;
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: center;
+align-items: center;
+gap: 30px;
+`
+
+export const JobItemLink = styled(Link)`
+  display: block;
+  padding: .45rem 0;
+  position: relative;
+  transition: .2s ease;
+  border-bottom: 1px solid #eee;
+  &:hover {
+    margin-left: 5px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: rgba(76,89,39);
+    transition: .3s ease;
+  }
+  &:hover:before {
+    width: 100%;
+  }
+`
 export const ContactDetails = styled.div``
 export const ContactDetailsLink = styled(Link)``
+
+export const JobListingItem = styled.div`
+
+`
