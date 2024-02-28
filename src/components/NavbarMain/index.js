@@ -62,19 +62,16 @@ export const NavbarMain = () => {
     }
   };
 
-  const toggleColor = () => {
-    if (window.scrollY >= 30) {
-      setscrollnav('true');
-    } else {
-      setscrollnav('false');
-    }
-  };
-
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
+
+
+
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+
   }, []);
   return (
     <>

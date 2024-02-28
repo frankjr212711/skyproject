@@ -8,16 +8,15 @@ export const NavContainer = styled.nav`
   left: 0;
   width: 100%;
   // height: 90px;
-  background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255, .99)"
+  background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255)"
   : "linear-gradient(to top, transparent, 45%, rgba(0,74,125, .6))"};
     
-    background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255, .99)"
+    background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255)"
     : "linear-gradient(to top, transparent, 45%, rgba(117, 79, 50, .99))"};
       
 
-    background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255, .99)"
+    background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255)"
     : "linear-gradient(to top, transparent, 75%, rgba(0, 0, 0, .5))"};
-
 
   box-shadow: ${({ scrollnav }) =>
     scrollnav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
@@ -52,7 +51,7 @@ export const NavTopSpan = styled.span`
 export const NavDown = styled.div`
   width: 100%;
   // height: 100px;
-  // background: whitesmoke;
+  // background: ${({toggleBg}) => (toggleBg ? '' : '#fff')}};
 
   display: flex;
   align-items: center;
@@ -118,7 +117,6 @@ export const DropDown = styled.div`
   left: 50%;
   transform: translate(-50%, -0%);
   width: 200px;
-  background: whitesmoke;
   background: rgba(255, 255, 255);
   transition: .3s ease;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
@@ -129,36 +127,16 @@ export const DropDown = styled.div`
     left; 100%;
   }
 `;
-
-export const NavLi = styled.li`
-  display: inline-block;
-  position: relative;
-
-  &:hover ${MegaDropDown}{
-      opacity: 1;
-      visibility: visible
-    }
-
-    &:hover ${DropDown}{
-      opacity: 1;
-      visibility: visible
-    }
-  }
-`;
-
 export const NavLink = styled(Link)`
   font-size: 17px;
   font-weight: 400;
   color: ${({ scrollnav }) => (scrollnav ? "#111" : "#fff")};
   position: relative;
-display: inline-block;
-  padding: 20px 1rem;
+  display: inline-block;
+  padding: 20px 1rem; 
+ 
 
-
-
-  // border: 1px solid red;
-
-
+ 
   &:before {
     content: "";
     position: absolute;
@@ -174,7 +152,33 @@ display: inline-block;
   &:hover:before {
     width: 100%;
   }
+  &:hover ${NavContainer} {
+    background: #fff;
+  }
+
 `;
+
+
+export const NavLi = styled.li`
+  display: inline-block;
+  position: relative;
+
+  &:hover ${MegaDropDown}{
+      opacity: 1;
+      visibility: visible
+    }
+    &:hover ${DropDown}{
+      opacity: 1;
+      visibility: visible
+    }
+    
+  
+
+  }   
+
+
+`;
+
 
 export const MenuBtn = styled.div`
   width: 42px;

@@ -8,7 +8,7 @@ export const GJRPage = () => {
     <>
       <GlobalStyles />
       <ScrollToTop />
-      <NavbarAlias />
+      {/* <NavbarAlias /> */}
 
       <GJR />
     </>
