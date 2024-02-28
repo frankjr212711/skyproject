@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 export const GJRNavContainer = styled.div`
   // border: 1px solid red;
   font-family: "Montserrat";
-  margin-top: 90px;
+  // margin-top: 90px;
+  position: fixed; 
+  left: 0;
+  width: 100%;
+  top: 90px;
 `;
 export const NavContent = styled.div`
   width: 100%;
@@ -42,6 +46,7 @@ export const GJRContactP = styled.p`
 `;
 export const ContactLink = styled(Link)`
   color: #111;
+
 `;
 export const ContactLinkSpan = styled.span`
   display: flex;
@@ -143,6 +148,10 @@ export const ThirdLi = styled.li`
 export const ThirdSpan = styled.span`
   display: flex;
   column-gap: 10px;
+  cursor: pointer;
+  &:hover {
+
+  }
 `;
 
 export const MegaDrop = styled.div`
