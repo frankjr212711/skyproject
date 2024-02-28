@@ -106,7 +106,7 @@ export const NavbarMain = () => {
                 </NavLink>
               </NavLi>
               <NavLi>
-                <NavLink to="/company" scrollnav={scrollnav}>
+                <NavLink to="/skywalker" scrollnav={scrollnav}>
                   Skywalker Waters
                 </NavLink>
                 <MegaDropDown>
@@ -157,7 +157,7 @@ export const NavbarMain = () => {
               </NavLi>
 
               <NavLi>
-                <NavLink to="/company" scrollnav={scrollnav}>
+                <NavLink to="/gjr" scrollnav={scrollnav}>
                   GJR Works
                 </NavLink>
                 <MegaDropDown>
@@ -204,7 +204,7 @@ export const NavbarMain = () => {
               </NavLi>
 
               <NavLi>
-                <NavLink to="/company" scrollnav={scrollnav}>
+                <NavLink to="/librex" scrollnav={scrollnav}>
                   Librex Holdings
                 </NavLink>
                 <MegaDropDown>

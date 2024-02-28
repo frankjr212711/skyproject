@@ -13,6 +13,11 @@ export const NavContainer = styled.nav`
   background: ${({ scrollNav }) =>
   scrollNav ? "rgba(255, 255, 255)" : "rgba(76,89,39)"};
 
+  background: ${({ scrollNav }) =>
+  scrollNav ? "rgba(255, 255, 255)" : "rgba(255, 255, 255)"};
+
+
+
 
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
@@ -26,13 +31,18 @@ export const NavTop = styled.div`
   height: 40px;
   border-bottom: 1px solid
     ${({ scrollNav }) =>
-      scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .1)"};
+  scrollNav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .1)"};
+      
+  border-bottom: 1px solid
+  ${({ scrollNav }) =>
+    scrollNav ? "rgba(0, 0, 0, .1)" : "rgba(0, 0, 0, .1)"}
 `;
 export const NavTopSpan = styled.span`
   display: flex;
   align-items: center;
   column-gap: 10px;
   color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#111")};
   font-size: 14px;
 `;
 
@@ -61,6 +71,7 @@ export const NavLogo = styled(Link)`
   align-items: center;
   font-size: 14px;
   color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#111")};
 `;
 
 export const NavMenu = styled.ul`
@@ -121,6 +132,7 @@ export const NavLink = styled(Link)`
   font-size: 16px;
   font-weight: 400;
   color: ${({ scrollNav }) => (scrollNav ? "#111" : "#fff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#111" : "#111")};
   position: relative;
   display: flex;
   align-items: center;

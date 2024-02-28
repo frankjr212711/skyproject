@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export const GJRNavContainer = styled.div`
   // border: 1px solid red;
   font-family: "Montserrat";
+  margin-top: 90px;
 `;
 export const NavContent = styled.div`
   width: 100%;
@@ -146,7 +147,7 @@ export const ThirdSpan = styled.span`
 
 export const MegaDrop = styled.div`
 position: fixed;
-top:180px;
+top:300px;
 left: 0;
 width: 100%;
 height: 417px;
