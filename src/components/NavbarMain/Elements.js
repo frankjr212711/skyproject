@@ -16,21 +16,15 @@ export const NavContainer = styled.nav`
       
 
     background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255)"
-    : "linear-gradient(to top, transparent, 75%, rgba(0, 0, 0, .5))"};
-
+  : "linear-gradient(to top, transparent, 75%, rgba(0, 0, 0, .5))"};
+    
   box-shadow: ${({ scrollnav }) =>
     scrollnav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};
   font-family: "Jost";
   z-index: 9999;
 
   transition: 0.3s ease;
-`;
-
-
-
-
-
-
+`
 export const NavTop = styled.div`
   width: 100%;
   padding: .5rem 0;
@@ -39,7 +33,6 @@ export const NavTop = styled.div`
   scrollnav ? "rgba(0,74,125, .1)" : "rgba(255, 255, 255, .01)"};
   // border-bottom: 1px solid rgba(255, 255, 255, .09);
   `;
-
 export const NavTopSpan = styled.span`
   display: flex;
   align-items: center;
@@ -47,27 +40,22 @@ export const NavTopSpan = styled.span`
   color: ${({ scrollnav }) => (scrollnav ? "#111" : "#fff")};
   font-size: 14px;
 `;
-
 export const NavDown = styled.div`
   width: 100%;
   // height: 100px;
   // background: ${({toggleBg}) => (toggleBg ? '' : '#fff')}};
-
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgb(255, 255, 255, .09);
 `;
-
 export const NavWrapper = styled.div`
   width: 80%;
   height: 100%;
   margin: auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: 0.3s ease;
-
 
   @media screen and (max-width: 940px ) {
     width: 95%;
@@ -80,20 +68,17 @@ export const NavWrapper = styled.div`
     padding: 0 1.5rem;
   }
 `;
-
 export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   font-size: 14px;
   color: ${({ scrollnav }) => (scrollnav ? "#111" : "#fff")};
 `;
-
 export const NavMenu = styled.ul`
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-
 export const MegaDropDown = styled.div`
   position: fixed;
   top: 102px;
@@ -110,7 +95,6 @@ export const MegaDropDown = styled.div`
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
   // border-top: 1px solid #fefefe;
 `;
-
 export const DropDown = styled.div`
   position: absolute; 
   top: 64px;
@@ -135,8 +119,6 @@ export const NavLink = styled(Link)`
   display: inline-block;
   padding: 20px 1rem; 
  
-
- 
   &:before {
     content: "";
     position: absolute;
@@ -155,10 +137,7 @@ export const NavLink = styled(Link)`
   &:hover ${NavContainer} {
     background: #fff;
   }
-
 `;
-
-
 export const NavLi = styled.li`
   display: inline-block;
   position: relative;
@@ -171,15 +150,8 @@ export const NavLi = styled.li`
       opacity: 1;
       visibility: visible
     }
-    
-  
-
   }   
-
-
 `;
-
-
 export const MenuBtn = styled.div`
   width: 42px;
   height: 34px;
@@ -197,7 +169,6 @@ export const MenuBtn = styled.div`
     display: block;
   }
 `;
-
 export const MenuBtnSpan = styled.span`
   position: absolute;
   top: 50%;
@@ -214,8 +185,7 @@ export const MenuBtnSpan = styled.span`
   &:nth-child(3) {
     top: 75%;
   }
-`;
-
+`
 export const MegaDropWrapper = styled.div`
   width: 80%;
   height: 80%;
@@ -233,8 +203,6 @@ export const MegaDropWrapper = styled.div`
     width: 95%;
   }
 `;
-
-
 export const DropLink = styled(Link)`
   display: block;
   padding: 1rem 0 1rem 0.5rem;
@@ -256,13 +224,9 @@ export const MegaLink = styled(Link)`
   font-size: 24px;
   color: #424242;
 `;
-
-
-
 export const BannerGJR = styled.div`
   height: 100%;
   // border: 1px solid red;
-
 `
 export const BannerGJRWrap = styled.div`
   width: 100%;
@@ -279,7 +243,6 @@ export const LogoGJR = styled(Link)`
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
-
 `
 export const TitleGJR = styled.h1`
 font-size: 25px;
@@ -336,14 +299,11 @@ export const JobItemLink = styled(Link)`
     width: 100%;
   }
 `
-
 export const JobListingItem = styled.div`
 
 `
-
 export const ContactDetails = styled.div``
 export const ContactDetailsLink = styled(Link)``
-
 
 export const DropImageContainer = styled.div`
 height: 100%; 

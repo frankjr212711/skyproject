@@ -17,7 +17,6 @@ export const NavContent = styled.div`
 export const GJRBanners = styled.div`
   width: 100%;
 `;
-
 export const GJRTopBanner = styled.div`
   width: 100%;
   height: 50px;
@@ -46,14 +45,12 @@ export const GJRContactP = styled.p`
 `;
 export const ContactLink = styled(Link)`
   color: #111;
-
 `;
 export const ContactLinkSpan = styled.span`
   display: flex;
   align-items: center;
   column-gap: 10px;
 `;
-
 export const GJRMidBanner = styled.div`
   height: 70px;
   background: #000044;
@@ -87,7 +84,6 @@ export const Title = styled.h2`
   font-size: 2rem;
   font-weight: 800;
 `;
-
 export const UL = styled.ul``;
 export const Li = styled.li`
   display: inline-block;
@@ -120,7 +116,6 @@ export const MenuBtnSpan = styled.span`
     top: 75%;
   }
 `;
-
 export const GJRThirdBanner = styled.div`
   width: 100%;
   height: 60px;
@@ -133,7 +128,6 @@ export const ThirdBannerContent = styled.div`
   height: 100%;
   margin: auto;
 `;
-
 export const ThirdUL = styled.ul`
   width: 100%;
   height: 100%;
@@ -153,7 +147,6 @@ export const ThirdSpan = styled.span`
 
   }
 `;
-
 export const MegaDrop = styled.div`
 position: fixed;
 top:300px;
@@ -166,7 +159,6 @@ align-items: center;
 justify-content: center;
 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
 `
-
 export const MegaDropContent = styled.div`
   width: 80%;
   height: 85%;
