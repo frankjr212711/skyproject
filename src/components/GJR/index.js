@@ -41,6 +41,7 @@ import {
   CardSpecs,
   ThirdUL,
   ThirdLi,
+  MegaDrop,
   ThirdSpan,
 } from "./Elements";
 
@@ -147,7 +148,7 @@ export const GJR = () => {
                       Wardrobes
                       <FaAngleDown />
                     </ThirdSpan>
-
+                    <MegaDrop>
                     <MegaDropContent>
                       <Card>
                         <CardImgBox>
@@ -227,6 +228,8 @@ export const GJR = () => {
                         </CardSpecs>
                       </Card>
                     </MegaDropContent>
+                    </MegaDrop>
+                    
                   </ThirdLi>
                   <ThirdLi>
                     <ThirdSpan>
