@@ -15,7 +15,6 @@ import {
 
 export const HeroMain = () => {
   const [hover, setHover] = useState(false);
-
   const onHover = () => {
     setHover(!hover);
   };

@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const GJRNavContainer = styled.div`
-  // border: 1px solid red;
   font-family: "Montserrat";
-  // margin-top: 90px;
   position: fixed; 
   left: 0;
   width: 100%;
-  top: 90px;
+  z-index: 9999;
+  transition: .3s ease;
+  top: ${({ scrollnav }) => scrollnav ? "0px"
+  : "-200px"};
+
 `;
 export const NavContent = styled.div`
   width: 100%;
@@ -135,10 +137,7 @@ export const ThirdUL = styled.ul`
   align-items: center;
   justify-content: space-between;
 `;
-export const ThirdLi = styled.li`
-  display: flex;
-  position: relative;
-`;
+
 export const ThirdSpan = styled.span`
   display: flex;
   column-gap: 10px;
@@ -149,7 +148,7 @@ export const ThirdSpan = styled.span`
 `;
 export const MegaDrop = styled.div`
 position: fixed;
-top:300px;
+top:200px;
 left: 0;
 width: 100%;
 height: 417px;
@@ -158,6 +157,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+opacity: 0;
+visibility: hidden;
+transition: .3s ease;
 `
 export const MegaDropContent = styled.div`
   width: 80%;
@@ -165,6 +167,17 @@ export const MegaDropContent = styled.div`
   border: 1px solid #ddd;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+`;
+
+export const ThirdLi = styled.li`
+  display: flex;
+  position: relative;
+  
+  &:hover ${MegaDrop} {
+    top:180px;
+    opacity: 1;
+    visibility: visible;
+  }
 `;
 export const Card = styled.div``;
 export const CardImgBox = styled.div``;

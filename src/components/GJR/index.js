@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import {
   FaEnvelope,
   FaPhone,
@@ -44,6 +45,8 @@ import {
   MegaDrop,
   ThirdSpan,
 } from "./Elements";
+import { HeroMain } from '../Hero/index';
+import { IntroSection } from "../IntroSection/index";
 
 const slides = [
   { url: "images/gjr-img-01.jpg", title: "sky_img_01" },
@@ -52,10 +55,26 @@ const slides = [
   { url: "images/gjr-img-04.jpg", title: "sky_img_04" },
 ];
 
+
+
+
 export const GJR = () => {
+  const [scrollnav, setscrollnav] = useState(false);
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setscrollnav(true);
+    } else {
+      setscrollnav(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+
   return (
     <>
-      <GJRNavContainer>
+      {/* <GJRNavContainer scrollnav={scrollnav}>
         <NavContent>
           <GJRBanners>
             <GJRTopBanner>
@@ -229,44 +248,453 @@ export const GJR = () => {
                       </Card>
                     </MegaDropContent>
                     </MegaDrop>
-                    
                   </ThirdLi>
                   <ThirdLi>
                     <ThirdSpan>
                       Kitchens
                       <FaAngleDown />
                     </ThirdSpan>
+                    <MegaDrop>
+                    <MegaDropContent>
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+                    </MegaDropContent>
+                    </MegaDrop>
                   </ThirdLi>
                   <ThirdLi>
                     <ThirdSpan>
                       TV Sets
                       <FaAngleDown />
                     </ThirdSpan>
+                    <MegaDrop>
+                    <MegaDropContent>
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+                    </MegaDropContent>
+                    </MegaDrop>
                   </ThirdLi>
                   <ThirdLi>
                     <ThirdSpan>
                       TV Units
                       <FaAngleDown />
                     </ThirdSpan>
+                    <MegaDrop>
+                    <MegaDropContent>
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+                    </MegaDropContent>
+                    </MegaDrop>
                   </ThirdLi>
                   <ThirdLi>
                     <ThirdSpan>
                       Home Office
                       <FaAngleDown />
                     </ThirdSpan>
+                    <MegaDrop>
+                    <MegaDropContent>
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+                    </MegaDropContent>
+                    </MegaDrop>
                   </ThirdLi>
                   <ThirdLi>
                     <ThirdSpan>
                       Awkward Spaces
                       <FaAngleDown />
                     </ThirdSpan>
+                    <MegaDrop>
+                    <MegaDropContent>
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+
+                      <Card>
+                        <CardImgBox>
+                          <CardImg src="images/gjr-img-02.jpg" alt=""></CardImg>
+                        </CardImgBox>
+                        <CardTitle>
+                          <CardTitle>ALL RANGES</CardTitle>
+                        </CardTitle>
+                        <CardSpecs>
+                          <Link to="">Styles</Link>
+                          <Link to="">Handles</Link>
+                        </CardSpecs>
+                      </Card>
+                    </MegaDropContent>
+                    </MegaDrop>
                   </ThirdLi>
                 </ThirdUL>
               </ThirdBannerContent>
             </GJRThirdBanner>
           </GJRBanners>
         </NavContent>
-      </GJRNavContainer>
+      </GJRNavContainer> */}
+
+      <HeroMain/>
+      <IntroSection />
+      
+     
     </>
   );
 };

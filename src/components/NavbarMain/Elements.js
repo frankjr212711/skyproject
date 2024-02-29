@@ -17,6 +17,7 @@ export const NavContainer = styled.nav`
 
     background: ${({ scrollnav }) => scrollnav ? "rgba(255, 255, 255)"
   : "linear-gradient(to top, transparent, 75%, rgba(0, 0, 0, .5))"};
+  // background: rgba(255, 255, 255);
     
   box-shadow: ${({ scrollnav }) =>
     scrollnav ? "0 1px 2px 0 rgba(0, 0, 0, 0.3)" : ""};

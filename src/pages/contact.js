@@ -1,5 +1,5 @@
 import { Contact } from "../components/Contact/index";
-import { NavbarAlias } from "../components/NavbarAlias/index";
+import { NavbarMain } from "../components/NavbarMain/index";
 import { GlobalStyles } from "../GlobalStyles";
 import { ScrollToTop } from "../ScrollTop";
 
@@ -8,7 +8,7 @@ export const ContactPage = () => {
     <>
       <GlobalStyles />
       <ScrollToTop />
-      <NavbarAlias />
+      <NavbarMain />
       <Contact />
     </>
   );
